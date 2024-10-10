@@ -5,7 +5,7 @@ export async function showCreateNameInputBox(): Promise<string | undefined> {
   return vscode.window.showInputBox({
     // placeHolder: 'Please enter the name of the new file',
     prompt: 'Enter the name of the new class',
-    value: 'newClass'
+    value: 'NewClass'
   })
 }
 
