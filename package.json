@@ -1,9 +1,10 @@
 {
-  "name": "cpp-class-creator",
+  "name": "cpp-class-creator-xx",
   "displayName": "cpp-class-creator",
   "description": "",
   "version": "0.0.1",
   "repository":"https://github.com/qqzz0xx/vscode-cpp-class-creator",
+  "publisher": "sunqiongzai",
   "engines": {
     "vscode": "^1.94.0"
   },
@@ -16,14 +17,14 @@
     "commands": [
       {
         "command": "cpp-class-creator.createClass",
-        "title": "create class c++"
+        "title": "Create Class C++"
       }
     ],
     "menus": {
       "explorer/context": [
         {
           "command": "cpp-class-creator.createClass",
-          "group": "navigation@-"
+          "group": "navigation@9"
         }
       ]
     }

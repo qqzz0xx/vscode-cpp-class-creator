@@ -12,6 +12,7 @@ export async function createClass(name: string, root: string) {
   console.log(name, root)
 
   const head = `#pragma once
+
 class ${name} {
 };
 
