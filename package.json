@@ -3,6 +3,7 @@
   "displayName": "cpp-class-creator",
   "description": "",
   "version": "0.0.1",
+  "repository":"https://github.com/qqzz0xx/vscode-cpp-class-creator",
   "engines": {
     "vscode": "^1.94.0"
   },
