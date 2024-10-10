@@ -2,8 +2,8 @@
   "name": "cpp-class-creator-xx",
   "displayName": "cpp-class-creator",
   "description": "",
-  "version": "0.0.1",
-  "repository":"https://github.com/qqzz0xx/vscode-cpp-class-creator",
+  "version": "0.1.0",
+  "repository": "https://github.com/qqzz0xx/vscode-cpp-class-creator",
   "publisher": "sunqiongzai",
   "engines": {
     "vscode": "^1.94.0"
