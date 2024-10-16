@@ -22,10 +22,8 @@ class ${name} {
 };
 
 `
-  const t1 = vscode.workspace.fs.writeFile(
-    vscode.Uri.file(path.join(root, `${name}.h`)),
-    Buffer.from(head)
-  )
+  const headUri = vscode.Uri.file(path.join(root, `${name}.h`))
+  const t1 = vscode.workspace.fs.writeFile(headUri, Buffer.from(head))
 
   const content = `#include "${name}.h" 
 
@@ -35,6 +33,14 @@ class ${name} {
     vscode.Uri.file(path.join(root, `${name}.cpp`)),
     Buffer.from(content)
   )
+
+  await Promise.all([t1, t2])
+    .then(() => {
+      return vscode.workspace.openTextDocument(headUri)
+    })
+    .then((doc) => {
+      vscode.window.showTextDocument(doc)
+    })
 }
 
 export async function isDir(root: string) {
